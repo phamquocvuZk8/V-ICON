@@ -1,2 +1,6 @@
-node_modules
-package.json
+Muốn chạy đc code trên heroku :
+1. trong package.json : "start":"node middle.js" phải có node cần chạy
+git add .
+git commit -m "fix port depoy heroku"
+git push
+app.listen(process.env.PORT) ////chạy từ ngoài vào
