@@ -8,5 +8,5 @@ app.get('/', (req, res ,next)=>{
     res.sendFile(path.join(__dirname, 'hello.html'))
 })
 
-app.listen(8000, (req, res, next)=>{
+app.listen(process.env.PORT, (req, res, next)=>{
 })
