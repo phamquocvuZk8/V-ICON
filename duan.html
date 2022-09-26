@@ -7,34 +7,14 @@
     <title>DOCUMENTS</title>
     <link rel="stylesheet"href=''>
     <link rel='text/javascript'>
-    <script>
-        app.post('/Login',(req, res, next)=>{
-    var username = req.body.username;
-    var password = req.body.password;
-
-    Account2Model.findOne({
-        username:username,
-        password:password
-    })
-    .then((data)=>{
-        if(data){
-            res.json('dang nhap thanh cong')
-        }else{
-            res.status(200).json('ban chua tao tai khoan')
-        }
-        
-    })
-   
     
-})
-    </script>
 <body>
-    <form action = '/Login' method = POST>
-        <input class = 'dangnhap' type = text placeholder = 'username' key = username>
+    <form action = '/create' method = POST>
+        username: <input class = 'dangnhap' type = text placeholder = 'username' key = username>
         <br>
-        <input class ='dangky' type = text placeholder ='password' key = password>
+        password: <input class ='dangk' type = text placeholder ='password' key = password>
         <br>
-        <button href='./sever.js'>SUBMIT</button>
+        <button href='./index.js'>SUBMIT</button>
     </form>
 </body>
 </head>
