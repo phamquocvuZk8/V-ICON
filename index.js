@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 const path = require('path')
-const BodyParser = require('body-parser')
+const bodyParser = require('body-parser')
 const Account2Model = require("./Mongoose/model")
 
 app.use(bodyParser.urlencoded({ extended: false }));
