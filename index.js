@@ -18,14 +18,14 @@ app.post('/create',(req, res, next)=>{
     })
     .then((data)=>{
         if(data){
-            res.sendFile(path.join(__dirname, 'hello.html'))
+            res.json('đã có tài khoản')
         }else{
             Account2Model.create({
                 username :username,
                 password :password
             })
             .then((data)=>{
-                res.sendFile
+                res.sendFile(path.join(__dirname, 'hello.html'))
             })
         }
     })
