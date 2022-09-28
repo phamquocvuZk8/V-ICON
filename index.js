@@ -7,9 +7,9 @@ const Account2Model = require("./Mongoose/model");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
-// app.get('/create',(req, res, next)=>{
-//     res.sendFile(path.join(__dirname,'duan.html'))
-// })
+app.get('/create',(req, res, next)=>{
+    res.sendFile(path.join(__dirname,'duan.html'))
+})
 app.post('/create',(req, res, next)=>{
     var username = req.body.username
     var password = req.body.password
