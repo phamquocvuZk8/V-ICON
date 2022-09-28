@@ -60,6 +60,6 @@ app.post('/Login',(req, res, next)=>{
 })
  
 
-app.listen(8000, (req, res, next)=>{
+app.listen(7000, (req, res, next)=>{
     console.log('Sever running.............')
 })

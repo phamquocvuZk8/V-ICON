@@ -49,6 +49,6 @@ app.post('/Login', (req, res, next)=>{
     })
 })
 
-app.listen(8008, (req, res, next)=>{
+app.listen(process.env.PORT, (req, res, next)=>{
     console.log('sever running.......')
 })
