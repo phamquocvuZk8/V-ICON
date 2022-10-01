@@ -1,0 +1,29 @@
+.dangnhap{
+    padding: 20px;  
+    padding-left: 30px; 
+    border-radius :6px; 
+}
+.dangky{
+    padding: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+    margin-left: 8px;
+    border-radius:6px ;
+}
+form{
+    margin-left: 500px;
+    margin-top: 200px;
+    
+}
+.submit{
+    margin-top: 20px;
+    margin-left: 150px;
+    background-color: rgb(17, 234, 165);
+    padding : 10px;
+    border-radius : 6px;
+    
+}
+html{
+    background-color: rgb(204, 40, 40);
+    background-image: url(../img/mikuhi.jpg);
+}
