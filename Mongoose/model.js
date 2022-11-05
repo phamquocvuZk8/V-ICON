@@ -16,4 +16,5 @@ const Account2 = new Schema({
 
 const Account2Model = mongoose.model('Account2', Account2)
 
+
 module.exports = Account2Model
